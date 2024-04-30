@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./1.js" type="module"></script>
+  <!-- <script src="./2.js" defer></script> -->
+
+</head>
+
+<body>
+  <div>1111</div>
+  <script>
+    if (true) {
+      function f() {
+        console.log('object')
+      }
+    }
+
+    // 情况二
+    try {
+      function f() {
+        console.log('1111object')
+      }
+    } catch (e) {
+      // ...
+    }
+    f()
+  </script>
+</body>
+
+</html>
